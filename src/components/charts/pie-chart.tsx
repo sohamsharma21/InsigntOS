@@ -69,8 +69,8 @@ export function DistributionPieChart() {
             fontSize: "10px",
             fontFamily: "monospace",
           }}
-          formatter={(value: number) =>
-            value >= 1000 ? `${(value / 1000).toFixed(1)}k` : String(value)
+          formatter={(value: any) =>
+            typeof value === "number" && value >= 1000 ? `${(value / 1000).toFixed(1)}k` : String(value)
           }
         />
       </RechartsPieChart>
