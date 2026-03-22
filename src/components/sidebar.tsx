@@ -24,7 +24,9 @@ export function Sidebar() {
     <aside className="fixed left-0 top-0 z-40 h-screen w-[200px] border-r border-[#1c1c1c] bg-[#0A0A0A] flex flex-col">
       {/* Logo */}
       <div className="flex items-center gap-2.5 px-4 h-12 border-b border-[#1c1c1c]">
-        <div className="w-[6px] h-[6px] rounded-full bg-cyan-500" />
+        <div className="flex items-center justify-center p-[2px] rounded-full border border-cyan-500/20 bg-[#0A0A0A] shadow-[0_0_10px_rgba(6,182,212,0.15)]">
+          <img src="/logo.png" alt="InsightOS" className="w-[20px] h-[20px] rounded-full" />
+        </div>
         <span className="text-[11px] font-medium text-cyan-400/80 tracking-[0.15em] uppercase">
           InsightOS
         </span>

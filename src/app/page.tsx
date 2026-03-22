@@ -10,7 +10,11 @@ export default function LandingPage() {
       <div className="absolute top-0 left-0 w-full h-[300px] bg-gradient-to-b from-cyan-900/10 to-transparent pointer-events-none" />
 
       {/* Hero Section */}
-      <header className="relative pt-32 pb-20 px-6 max-w-5xl mx-auto flex flex-col items-center text-center animate-fadeIn z-10">
+      <header className="relative pt-24 pb-20 px-6 max-w-5xl mx-auto flex flex-col items-center text-center animate-fadeIn z-10">
+        <div className="mb-10">
+          <img src="/logo.png" alt="InsightOS Brand" className="w-20 h-20 rounded-full border border-[#222] shadow-[0_0_30px_rgba(6,182,212,0.15)]" />
+        </div>
+
         <div className="mb-6 inline-flex items-center gap-2 px-3 py-1 rounded-[1px] border border-cyan-500/30 bg-cyan-500/5 text-[10px] text-cyan-400 font-mono uppercase tracking-widest shadow-[0_0_15px_rgba(6,182,212,0.1)]">
           <Terminal className="w-3 h-3" />
           <span>System Online • Built by Soham</span>
@@ -113,9 +117,17 @@ export default function LandingPage() {
         <p className="text-lg text-[#ccc] font-light max-w-2xl mx-auto italic mb-6">
           &quot;For me, this project is about building systems that turn data into decisions, not just dashboards. That&apos;s the kind of problem I enjoy working on.&quot;
         </p>
-        <p className="text-xs text-[#555] font-mono uppercase tracking-widest">
+        <p className="text-xs text-[#555] font-mono uppercase tracking-widest mb-6">
           — Soham Sharma | InsightOS Architect
         </p>
+        <div className="flex items-center justify-center gap-6">
+          <a href="https://linkedin.com/in/sohamsharma21" target="_blank" rel="noreferrer" className="text-[10px] text-cyan-500/70 hover:text-cyan-400 font-mono tracking-widest transition-colors hover:shadow-[0_0_10px_rgba(6,182,212,0.2)]">
+            [ LINKEDIN ]
+          </a>
+          <a href="mailto:sohamsharmapcm@gmail.com" className="text-[10px] text-cyan-500/70 hover:text-cyan-400 font-mono tracking-widest transition-colors hover:shadow-[0_0_10px_rgba(6,182,212,0.2)]">
+            [ EMAIL ]
+          </a>
+        </div>
       </footer>
     </div>
   );
